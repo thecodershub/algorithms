@@ -40,3 +40,11 @@ if ($severalItems !== [0, 1, 2, 2, 4, 8, 8, 8]) {
     trigger_error('Result should be [0, 1, 2, 2, 4, 8, 8, 8]', E_USER_NOTICE);
 }
 showResult($testCase, $severalItems);
+
+// Negative case
+$testCase = [2, 3, 1, 4];
+$negativeItemsCase = quickSort($testCase);
+if ($negativeItemsCase === [4, 3, 2, 1]) {
+    trigger_error('Result should NOT be [4, 3, 2, 1]', E_USER_NOTICE);
+}
+showResult($testCase, $negativeItemsCase);

@@ -9,7 +9,8 @@ Please follow these guidelines as close as possible before creating pull request
 
 ## Adding/Modifying Code
 - Please make sure code you're adding must be compatible with latest stable version of programming language
-- Add test cases to confirm your code
+- Add test cases to confirm your code. Add both positive and negative cases
+- Add tests in a separate function sot they can be imported in a single checker/tester script later. Call this test function in your program's main function
 - Try to write code which is modular and importable
 
 ## Suggesting new programming language or algorithm

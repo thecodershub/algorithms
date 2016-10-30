@@ -20,6 +20,7 @@ Collection of algorithms in multiple programming languages
 - Anubhav Srivastava (@anubhavsrivastava)
 - Dheerendra Rathor (@DheerendraRathor)
 - William J. S. Okano (@williamokano)
+- Jorge Burgos (@j-burgos)
 - The Coders Hub (@thecodershub)
 
 # Hacktoberfest Note

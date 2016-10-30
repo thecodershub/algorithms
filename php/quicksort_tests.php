@@ -45,6 +45,6 @@ showResult($testCase, $severalItems);
 $testCase = [2, 3, 1, 4];
 $negativeItemsCase = quickSort($testCase);
 if ($negativeItemsCase === [4, 3, 2, 1]) {
-    trigger_error('Result should NOT be [4, 3, 2, 1]', E_USER_NOTICE);
+    trigger_error('Result should NOT be [4, 3, 2, 1].', E_USER_NOTICE);
 }
 showResult($testCase, $negativeItemsCase);

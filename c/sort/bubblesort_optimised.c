@@ -44,13 +44,32 @@ void printArray(int arr[], int size)
     printf("\n");
 }
 
+
+void _sortingProvider(int arr[])
+{
+  int arraySize = sizeof(arr);
+  if(arraySize<=0)
+  {
+    printf("Nothing to sort.\n", );
+    return 0;
+  }
+  int n = arraySize/sizeof(arr[0]);
+  printf("Sample Data: \n");
+  printArray(arr, n);
+  bubbleSort(arr, n);
+  printf("Sorted array: \n");
+  printArray(arr, n);
+
+}
+
 // Driver program to test above functions
 int main()
 {
-    int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    bubbleSort(arr, n);
-    printf("Sorted array: \n");
-    printArray(arr, n);
-    return 0;
+  _sortingProvider({64, 34, 25, 12, 22, 11, 90});
+  _sortingProvider({-64, -34, -25, -12, -22, -11, -90});
+  _sortingProvider({64, -34, 25, -12, 22, 11, -90});
+  _sortingProvider({100});
+  _sortingProvider({});
+
+  return 0;
 }

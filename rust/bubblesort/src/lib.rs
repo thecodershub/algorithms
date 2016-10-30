@@ -34,5 +34,18 @@ mod tests {
 }
 
 fn sort<T: PartialOrd>(v: &mut Vec<T>) {
+	loop {
+		let mut swapped = false;
 
+		for i in 1..v.len() {
+			if v[i-1] > v[i] {
+				v.swap(i, i-1);
+				swapped = true;
+			}
+		}
+
+		if !swapped {
+			break;
+		}
+	}
 }

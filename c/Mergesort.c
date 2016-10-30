@@ -57,9 +57,10 @@ void mergeSort(int arr[], int n)
     return;
 }
 
-int checkMergeSortResult(int arr[], int n)
+int checkMergeSort(int arr[], int n)
 {
     int i;
+    mergeSort(arr, n);
     for(i = 1; i < n; ++i)
     {
         if(arr[i-1] > arr[i])
@@ -79,8 +80,7 @@ int testMergeSort()
     {
         arr[i] = 0;
     }
-    mergeSort(arr, NLIMIT);
-    if(checkMergeSortResult(arr, NLIMIT))
+    if(checkMergeSort(arr, NLIMIT))
     {
         return 1;
     }
@@ -91,8 +91,7 @@ int testMergeSort()
     {
         arr[i] = i;
     }
-    mergeSort(arr, NLIMIT);
-    if(checkMergeSortResult(arr, NLIMIT))
+    if(checkMergeSort(arr, NLIMIT))
     {
         return 1;
     }
@@ -103,8 +102,7 @@ int testMergeSort()
     {
         arr[i] = j--;
     }
-    mergeSort(arr, NLIMIT);
-    if(checkMergeSortResult(arr, NLIMIT))
+    if(checkMergeSort(arr, NLIMIT))
     {
         return 1;
     }

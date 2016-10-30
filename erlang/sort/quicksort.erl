@@ -28,4 +28,4 @@ start() ->
   ?assert(quicksort(Test1) =:= [1,2,3,4,9]),
   ?assert(quicksort(Test2) =:= [1]),
   ?assert(quicksort(Test3) =:= [-1,0,1,2,2,2,4,5]),
-  ?assert(quicksort(Test4) =:= [0]).
+  ?assert(quicksort(Test4) =:= []).

@@ -16,6 +16,7 @@ Collection of algorithms in multiple programming languages
 ## Authors
   *Add your name in alphabetical order*
 - Dheerendra Rathor (@DheerendraRathor)
+- Ilim Ugur (@ilimugur)
 - The Coders Hub (@thecodershub)
 
 # Hacktoberfest Note

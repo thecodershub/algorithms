@@ -1,4 +1,4 @@
-
+package com.thecodershub.algorithms;
 
 public class BinarySearch {
 	
@@ -36,11 +36,20 @@ public class BinarySearch {
 		return mid;
 	}
 	
+	public static void testBinarySearch() {
+		int[] haystack = {1,2,3,4,5,6,7,8};
+		int needle = 3;
+		int index = binarySearch(haystack, needle, 0, haystack.length - 1);
+		assert index == 2;
+		System.out.println("Index of " + needle + " in [1,2,3,4,5,6,7,8]: " + index);
+		needle = 20;
+		index = binarySearch(haystack, needle, 0, haystack.length - 1);
+		assert index == -1;
+		System.out.println("Index of " + needle + " in [1,2,3,4,5,6,7,8]: " + index);
+	}
 	
 	public static void main(String... args) {
-		int[] haystack = {1, 2, 3, 4, 5, 6, 7};
-		int needle = 3;
-		System.out.println("Position of 3 in [1,2,3,4,5,6,7]: " + binarySearch(haystack, needle, 0, haystack.length - 1));
+		testBinarySearch();
 	}
 	
 }

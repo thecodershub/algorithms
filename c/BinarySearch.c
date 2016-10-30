@@ -1,6 +1,12 @@
 #include <stdio.h>
 
 int main() {
+  // Assumes we know how binary search works, 
+  testBinSearch();
+  return 0;
+}
+
+void testBinSearch() {
   // Sample to test with
   int arr[] = {-31, 0, 1, 2, 2, 4, 65, 83, 99, 782};
   int arrSize = sizeof a / sizeof a[0];
@@ -15,7 +21,6 @@ int main() {
   // Prints recursive solution.
   // Should print: 5 is at index -1
   printf("%d is at index %d.\n", num, index);
-  return 0;
 }
 
 // Pre-condition: takes in an array, size of the array, and number we want to find in the array.
@@ -49,7 +54,6 @@ int binarySearchRecursive(int *arr, int value, int low, int high) {
   }
   int mid = low + (high - low) / 2;
   
-  // Recursion base case
   if (arr[mid] == value) return mid;
   else if (arr[mid] < value) {
     return binarySearchRecursive(arr, value, mid + 1, high);

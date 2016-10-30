@@ -9,6 +9,7 @@ Collection of algorithms in multiple programming languages
 - Go-lang
 - Haskell
 - Java
+- PHP
 - Python
 - Rust
 - Scheme

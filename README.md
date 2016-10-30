@@ -10,6 +10,7 @@ Collection of algorithms in multiple programming languages
 - Haskell
 - Java
 - JavaScript
+- PHP
 - Python
 - Rust
 - Scheme
@@ -18,6 +19,7 @@ Collection of algorithms in multiple programming languages
   *Add your name in alphabetical order*
 - Anubhav Srivastava (@anubhavsrivastava)
 - Dheerendra Rathor (@DheerendraRathor)
+- William J. S. Okano (@williamokano)
 - The Coders Hub (@thecodershub)
 
 # Hacktoberfest Note

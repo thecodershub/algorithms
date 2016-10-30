@@ -9,16 +9,13 @@ public class Quicksort {
 	private int[] numbers;
 	private int number;
 
-	public void sort(int[] values) {
-		// check for empty or null array
-		if (values == null || values.length == 0) {
-			return;
-		}
-		
+	public int[] sort(int[] values) {
 		this.numbers = values;
 		number = values.length;
-		
+
 		quicksort(0, number - 1);
+
+		return this.numbers;
 	}
 
 	private void quicksort(int low, int high) {
@@ -61,5 +58,9 @@ public class Quicksort {
 		int temp = numbers[i];
 		numbers[i] = numbers[j];
 		numbers[j] = temp;
+	}
+
+	public int[] test(int[] testArray) {
+		return this.sort(testArray);
 	}
 }

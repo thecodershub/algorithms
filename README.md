@@ -21,6 +21,7 @@ Collection of algorithms in multiple programming languages
 - Dheerendra Rathor (@DheerendraRathor)
 - William J. S. Okano (@williamokano)
 - The Coders Hub (@thecodershub)
+- Joonatan M. L. Saarhelo
 
 # Hacktoberfest Note
 - Before creating pull request please claim issue first.

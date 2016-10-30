@@ -7,11 +7,13 @@ int main() {
   int num = 2;
   int index = binarySearch(arr, arrSize, num);
   // Prints iterative solution.
+  // Should print: 2 is at index 4
   printf("%d is at index %d.\n", num, index);
   
   num = 5;
   index = binarySearchRecursive(arr, num, 0, arrSize - 1);
   // Prints recursive solution.
+  // Should print: 5 is at index -1
   printf("%d is at index %d.\n", num, index);
   return 0;
 }

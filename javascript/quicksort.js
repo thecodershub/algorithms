@@ -18,3 +18,4 @@ export default quicksort
 // example usage
 // const diff = (a, b) => a - b
 // console.log(quicksort(diff, [3, 2, 5, 7, 9123, 92, 23, 567, 23]))
+// console.log(quicksort((a, b) => a.value - b.value, [{value: 3}, {value: 5}]))

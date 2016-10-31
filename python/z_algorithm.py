@@ -36,13 +36,13 @@ def generate_z_array(string):
 
 def search(haystack, needle):
     """
-    Returns index of needle in haystack.
+    Returns list of indexes of needle in haystack.
 
     It generates  z-array for needle + "$" + haystack. It assumes that $ is not part of haystack or needle.
     Since z_arrays represents longest substring at index i which is also prefix of string, we only need to search for
     equal length pattern.
 
-    Returns -1 on non matching
+    Returns empty list on non matching
     :param haystack:
     :param needle:
     :return:
@@ -50,11 +50,13 @@ def search(haystack, needle):
     combined_str = needle + "$" + haystack
     z_array = generate_z_array(combined_str)
 
+    match = []
+
     for i in range(0, len(combined_str)):
         if z_array[i] == len(needle):
-            return i - len(needle) - 1
+            match.append(i - len(needle) - 1)
 
-    return -1
+    return match
 
 
 def main():
@@ -62,15 +64,15 @@ def main():
     z_array = generate_z_array(string)
 
     assert z_array == [0, 5, 4, 3, 2, 1]
-    assert search(string, "aaa") == 0
-    assert search(string, "aaaaaa") == 0
+    assert search(string, "aaa") == [0, 1, 2, 3]
+    assert search(string, "aaaaaa") == [0]
 
     string = "aabcaabxaaaz"
     z_array = generate_z_array(string)
 
     assert z_array == [0, 1, 0, 0, 3, 1, 0, 0, 2, 2, 1, 0]
-    assert search(string, "xyz") == -1
-    assert search(string, "bxa") == 6
+    assert search(string, "xyz") == []
+    assert search(string, "bxa") == [6]
 
 
 if __name__ == '__main__':

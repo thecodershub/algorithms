@@ -1,4 +1,4 @@
-// quicksort :: Ord a => [a] -> [a]
+// quicksort :: Ord a => (a -> b -> Number) -> [a] -> [a]
 function quicksort( diff = (a, b) => a - b, array = [] ) {
 	if( array.length === 0 ) return []
 

@@ -1,6 +1,6 @@
 #include <cstring>
 #include <vector>
-#include <algorithm>
+#include <cassert>
 
 using namespace std;
 
@@ -51,30 +51,21 @@ int testQuickSort()
     {
         elements[i] = 0;
     }
-    if(checkQuickSort(elements))
-    {
-        return 1;
-    }
+    assert(checkQuickSort(elements) == 0);
 
     /* Test #2: Range [0, NLIMIT) in increasing order */
     for(int i = 0; i < elements.size(); ++i)
     {
         elements[i] = i;
     }
-    if(checkQuickSort(elements))
-    {
-        return 1;
-    }
+    assert(checkQuickSort(elements) == 0);
 
     /* Test #3: Range [1, NLIMIT] in decreasing order */
     for(int i = 0, j = elements.size(); i < elements.size(); ++i)
     {
         elements[i] = j--;
     }
-    if(checkQuickSort(elements))
-    {
-        return 1;
-    }
+    assert(checkQuickSort(elements) == 0);
 
     return 0;
 }

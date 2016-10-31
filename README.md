@@ -21,9 +21,9 @@ Collection of algorithms in multiple programming languages
 - Dheerendra Rathor (@DheerendraRathor)
 - Ilim Ugur (@ilimugur)
 - Jorge Burgos (@j-burgos)
+- Nikola Ristic (@rista404)
 - The Coders Hub (@thecodershub)
 - William J. S. Okano (@williamokano)
-- Nikola Ristic (@rista404)
 
 # Hacktoberfest Note
 - Before creating pull request please claim issue first.

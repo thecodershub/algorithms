@@ -4,8 +4,8 @@ function quicksort( diff = (a, b) => a - b, array = [] ) {
 
 	const [x, ...xs] = array
 
-	const lessThan = xs.filter(a => diff(a, x) >= 0)
-	const biggerThan = xs.filter(a => diff(a, x) < 0)
+	const lessThan = xs.filter(a => diff(a, x) < 0)
+	const biggerThan = xs.filter(a => diff(a, x) >= 0)
 
 	const lessThanSorted = quicksort(diff, lessThan)
 	const biggerThanSorted = quicksort(diff, biggerThan)

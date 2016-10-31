@@ -1,5 +1,6 @@
 #include <cstring>
 #include <vector>
+#include <cassert>
 
 using namespace std;
 
@@ -79,35 +80,25 @@ int testMergeSort()
 {
     vector<int> elements(100000);
     /* Test #1: All 0s */
-
     for(int i = 0; i < elements.size(); ++i)
     {
         elements[i] = 0;
     }
-    if(checkMergeSort(elements))
-    {
-        return 1;
-    }
+    assert(checkMergeSort(elements) == 0);
 
     /* Test #2: Range [0, NLIMIT) in increasing order */
     for(int i = 0; i < elements.size(); ++i)
     {
         elements[i] = i;
     }
-    if(checkMergeSort(elements))
-    {
-        return 1;
-    }
+    assert(checkMergeSort(elements) == 0);
 
     /* Test #3: Range [1, NLIMIT] in decreasing order */
     for(int i = 0, j = elements.size(); i < elements.size(); ++i)
     {
         elements[i] = j--;
     }
-    if(checkMergeSort(elements))
-    {
-        return 1;
-    }
+    assert(checkMergeSort(elements) == 0);
 
     return 0;
 }

@@ -1,7 +1,7 @@
 /**
  * Bubble sorts a list of numbers.
- * @param {Numer|Array} listOfNums - Array of numbers to be sorted.
- * @return {Numer|Array} listOfNums - Sorted array of initial parameter.
+ * @param {Numer[]} listOfNums - Array of numbers to be sorted.
+ * @return {Numer[]} listOfNums - Sorted array of initial parameter.
  */
 function bubblesort(listOfNums) {
   for(var j = 0; j < listOfNums.length - 1; j++) {

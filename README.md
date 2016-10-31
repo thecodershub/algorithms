@@ -23,6 +23,7 @@ Collection of algorithms in multiple programming languages
 - William J. S. Okano (@williamokano)
 - Jorge Burgos (@j-burgos)
 - The Coders Hub (@thecodershub)
+- Joonatan M. L. Saarhelo
 
 # Hacktoberfest Note
 - Before creating pull request please claim issue first.

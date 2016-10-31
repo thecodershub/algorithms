@@ -12,21 +12,14 @@
 
 int binary_search(int * A, int start, int end, int val)
 {
-	int l = start;
-	int r = end;
+	int mid = (start + end)/2;
 
-	while(l < r)
-	{
-		int mid = (l + r) / mid;
+	if(A[mid] == val)
+		return mid;
 
-		if(A[mid] == val)
-			return mid;
-
+	if(start < end)
 		if(A[mid] < val)
-			r = mid - 1;
+			return binary_search(A, mid+1, end, val);
 		else
-			l = mid + 1;
-	}
-
-	return -1;
+			return binary_search(A, start, mid-1, val);
 }

@@ -1,4 +1,5 @@
 #include <string.h>
+#include <assert.h>
 #define NLIMIT 100000
 
 void mergeSort(int arr[], int n)
@@ -80,10 +81,7 @@ int testMergeSort()
     {
         arr[i] = 0;
     }
-    if(checkMergeSort(arr, NLIMIT))
-    {
-        return 1;
-    }
+    assert(checkMergeSort(arr, NLIMIT) == 0);
 
     /* Test #2: Range [0, NLIMIT) in increasing order */
 
@@ -91,10 +89,7 @@ int testMergeSort()
     {
         arr[i] = i;
     }
-    if(checkMergeSort(arr, NLIMIT))
-    {
-        return 1;
-    }
+    assert(checkMergeSort(arr, NLIMIT) == 0);
 
     /* Test #3: Range [1, NLIMIT] in decreasing order */
     j = NLIMIT;
@@ -102,10 +97,7 @@ int testMergeSort()
     {
         arr[i] = j--;
     }
-    if(checkMergeSort(arr, NLIMIT))
-    {
-        return 1;
-    }
+    assert(checkMergeSort(arr, NLIMIT) == 0);
 
     return 0;
 }
@@ -115,4 +107,3 @@ int main()
     testMergeSort();
     return 0;
 }
-

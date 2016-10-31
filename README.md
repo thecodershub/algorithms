@@ -28,3 +28,4 @@ Collection of algorithms in multiple programming languages
 - Before creating pull request please claim issue first.
 - Before createing pull request see contribution guidelines.
 - If you're thinking why your PR hasn't been merged yet, please read the contribution guidelines. You probably haven't used asserts for tests, or haven't commented out what your code does.
+

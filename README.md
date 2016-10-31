@@ -19,6 +19,7 @@ Collection of algorithms in multiple programming languages
   *Add your name in alphabetical order*
 - Anubhav Srivastava (@anubhavsrivastava)
 - Dheerendra Rathor (@DheerendraRathor)
+- Nikhil Hassija (@nikhilhassija)
 - William J. S. Okano (@williamokano)
 - The Coders Hub (@thecodershub)
 

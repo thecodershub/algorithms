@@ -17,6 +17,7 @@ Collection of algorithms in multiple programming languages
 
 ## Authors
   *Add your name in alphabetical order*
+- Alejandro Linarez Rangel (@alinarezrangel)
 - Anubhav Srivastava (@anubhavsrivastava)
 - Dheerendra Rathor (@DheerendraRathor)
 - Ilim Ugur (@ilimugur)

@@ -53,30 +53,24 @@ void fillArrayRandomly(int *array, int size){
 void test1(){
     int array[100];
     fillArrayGradually(array,sizeof(array)/sizeof(int));
-    printf("Test 1\n");
- 	printf("Array: \n");
- 	printArray(array, sizeof(array)/sizeof(int));
+    printArray(array, sizeof(array)/sizeof(int));
     int value = rand()%100;
     printf("Value to find: %d\n", value);
     int position = binarySearch(array, value, 0, sizeof(array)/sizeof(int));
     if(position == -1) printf("Value not found\n");
     else printf("Value found on position: %d\n", position);
-    printf("\n\n\n");
 }
 
 //Test of randomly filled array
 void test2(){
     int array[100];
     fillArrayRandomly(array,sizeof(array)/sizeof(int));
-    printf("Test 2\n");
- 	printf("Array: \n");
  	printArray(array, sizeof(array)/sizeof(int));
     int value = rand()%100;
     printf("Value to find: %d\n", value);
     int position = binarySearch(array, value, 0, sizeof(array)/sizeof(int));
     if(position == -1) printf("Value not found\n");
     else printf("Value found on position: %d\n", position);
-    printf("\n\n\n");
 }
 
 //Main function

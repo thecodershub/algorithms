@@ -27,25 +27,15 @@ void printArray(int *array, int size){
 //Test of positive values
 void test1(){
 	int array[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-	printf("Test 1\n");
-	printf("Array: \n");
-	printArray(array, sizeof(array)/sizeof(int));
 	bubbleSort(array, sizeof(array)/sizeof(int));
-	printf("Sorted Array: \n");
 	printArray(array, sizeof(array)/sizeof(int));
-    printf("\n\n\n");
 }
 
 //Test of negative values
 void test2(){
 	int array[10] = {-9, -8, -7, -6, -5, -4, -3, -2, -1, 0};
-	printf("Test 2\n");
-	printf("Array: \n");
-	printArray(array, sizeof(array)/sizeof(int));
 	bubbleSort(array, sizeof(array)/sizeof(int));
-	printf("Sorted Array: \n");
 	printArray(array, sizeof(array)/sizeof(int));
-    printf("\n\n\n");
 }
 
 //Test of random 1000 values
@@ -54,18 +44,13 @@ void test3(){
 	for(int i = 0; i<1000; i++){
         array[i] = (rand() % 200) - 100; //random values in range (-100; 99)
     }
-	printf("Test 2\n");
-	printf("Array: \n");
-	printArray(array, sizeof(array)/sizeof(int));
 	bubbleSort(array, sizeof(array)/sizeof(int));
-	printf("Sorted Array: \n");
 	printArray(array, sizeof(array)/sizeof(int));
-    printf("\n\n\n");
 }
 
 //Main function
 int main(int argc, char*argv[]){
-	test1();
+    test1();
     test2();
     test3();
 

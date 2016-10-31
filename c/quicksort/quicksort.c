@@ -14,6 +14,7 @@ void algorithm_quicksort(
 {
 	if(array_size <= 1)
 		return;
+	/* Call the recursive quicksort */
 	algorithm_quicksort_core(
 		array,
 		element_size,
@@ -35,6 +36,7 @@ void algorithm_quicksort_s(
 {
 	if(array_size <= 1)
 		return;
+	/* Call the recursive quicksort */
 	algorithm_quicksort_core(
 		array,
 		element_size,
@@ -57,6 +59,7 @@ void algorithm_quicksort_sp(
 {
 	if(array_size <= 1)
 		return;
+	/* Call the recursive quicksort */
 	algorithm_quicksort_core(
 		array,
 		element_size,
@@ -81,6 +84,9 @@ void algorithm_quicksort_core(
 	int pivot = 0;
 	int res = 0;
 
+	/* If the lower bound is less than the greather bound
+	 * (this is because this function can call it with (0, -1) for the indexes)
+	*/
 	if(lower < higher)
 	{
 		/* Select a pivot and sort */
@@ -125,6 +131,14 @@ int algorithm_quicksort_fpivot(
 {
 	int i = lower - 1, j = higher + 1, pivot = lower;
 
+	/*
+	 * We have two indexes, one for the left and one for the right sides
+	 * of the array. We are using the Hoare partition scheme algorithm,
+	 * we need to increment/decrement these indexes until they are less/grether
+	 * than the pivot: the left index is incremented until is greather than
+	 * the pivot and vice-versa.
+	*/
+
 	while(1)
 	{
 		do
@@ -137,11 +151,17 @@ int algorithm_quicksort_fpivot(
 			j--;
 		} while((*less_than)(array + (pivot * element_size), array + (j * element_size), element_size));
 
+		/*
+		 * This slice is sorted!
+		*/
 		if(i >= j)
 		{
 			return j;
 		}
 
+		/*
+		 * Swap the unordered elements.
+		*/
 		(*swap)(array + (i * element_size), array + (j * element_size), element_size);
 	}
 }

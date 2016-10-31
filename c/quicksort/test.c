@@ -11,7 +11,7 @@
 
 int lessThan(void*, void*, size_t);
 
-int main(int argc, char** argv)
+int quicksort_test(void)
 {
 	srand((unsigned int)time(NULL));
 
@@ -40,7 +40,7 @@ int main(int argc, char** argv)
 
 	printf(" ]\n");
 
-	exit(EXIT_SUCCESS);
+	return EXIT_SUCCESS;
 }
 
 int lessThan(void* a, void* b, size_t element_size)

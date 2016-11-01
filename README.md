@@ -22,6 +22,7 @@ Collection of algorithms in multiple programming languages
 - Ilim Ugur (@ilimugur)
 - Jorge Burgos (@j-burgos)
 - The Coders Hub (@thecodershub)
+- Nielsen Martins Gonçalves (@nielsenmg)
 - William J. S. Okano (@williamokano)
 
 # Hacktoberfest Note

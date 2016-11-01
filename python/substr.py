@@ -8,7 +8,9 @@ def substr(subst,st):
             
 def main():
     st = "blahblblah"
-    substr("blah",st)
+    assert substr("blah",st)
+    assert substr("ab",st)
+    assert substr(" bl",st)
 
 if __name__ == '__main__':
     main()

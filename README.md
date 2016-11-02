@@ -21,6 +21,7 @@ Collection of algorithms in multiple programming languages
 - Dheerendra Rathor (@DheerendraRathor)
 - Ilim Ugur (@ilimugur)
 - Jorge Burgos (@j-burgos)
+- Oleh Huzei (@oguzey)
 - The Coders Hub (@thecodershub)
 - William J. S. Okano (@williamokano)
 

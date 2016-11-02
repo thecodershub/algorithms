@@ -24,6 +24,12 @@ function binarySearch(arr, target) {
 // Usage:
 const arr = [2, 3, 9, 12, 30, 59, 100, 1024, 2866];
 
-console.log(`array: ${arr}`);
-console.log(`Index of 9 in arr: ${binarySearch(arr, 9)}`);
-console.log(`Index of 10 in arr: ${binarySearch(arr, 10)} (not found)`);
+console.assert(binarySearch(arr, 2) == 0);
+console.assert(binarySearch(arr, 3) == 1);
+console.assert(binarySearch(arr, 9) == 2);
+console.assert(binarySearch(arr, 12) == 3);
+console.assert(binarySearch(arr, 30) == 4);
+console.assert(binarySearch(arr, 59) == 5);
+console.assert(binarySearch(arr, 100) == 6);
+console.assert(binarySearch(arr, 1024) == 7);
+console.assert(binarySearch(arr, 2866) == 8);

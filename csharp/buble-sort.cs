@@ -4,14 +4,14 @@ using System.Diagnostics;
 
 public class Test
 {
-	public static void Main()
-	{
-		TestSortedArray();
+    public static void Main()
+    {
+        TestSortedArray();
         TestTheWorstCaseArray();
         TestTwoUniqueNumbersInArray();
         TestRandomDataInArray();
         TestOnlyZeroNumbersInArray();
-	}
+    }
 
     public static void BubleSort(int[] arr)
     {

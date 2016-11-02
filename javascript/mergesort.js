@@ -145,6 +145,6 @@ const tests = [
 
 for (let j = 0; j < tests.length; j++) {
 
-  console.assert(mergeSort(tests[j].i).toString() == tests[j].o.toString());
-  console.assert(mergeSort(tests[j].i, (a, b) => a > b).toString == tests[j].r.toString);
+  console.assert(mergeSort(tests[j].i).toString() === tests[j].o.toString());
+  console.assert(mergeSort(tests[j].i, (a, b) => a > b).toString === tests[j].r.toString);
 }

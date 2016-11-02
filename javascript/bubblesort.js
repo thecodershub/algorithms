@@ -4,11 +4,11 @@
  * @return {Numer[]} listOfNums - Sorted array of initial parameter.
  */
 function bubblesort(listOfNums) {
-  for(var j = 0; j < listOfNums.length - 1; j++) {
-    for(var i = j + 1; i < listOfNums.length; i++) {
-      if(listOfNums[i] < listOfNums[j]) {
-        var holder = listOfNums[j];
-        listOfNums[j] = listOfNums[i];
+  for(var j = listOfNums.length; j > 0; j--) {
+    for(var i = 1; i < j; i++) {
+      if(listOfNums[i-1] > listOfNums[i]) {
+        var holder = listOfNums[i-1];
+        listOfNums[i-1] = listOfNums[i];
         listOfNums[i] = holder;
       }
     }

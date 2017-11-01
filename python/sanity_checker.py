@@ -20,7 +20,7 @@ def main():
     insertion_sort.main()
     bubble_sort.main()
     z_algorithm.main()
-    kmp.main
+    kmp.main()
 
 
 if __name__ == '__main__':
